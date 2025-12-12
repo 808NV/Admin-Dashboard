@@ -4,7 +4,7 @@ import logout from "public/assets/icons/logout.svg"
 import { sidebarItems } from "~/constants"
 import { cn } from "lib/utils"
 
-const NavItems = () => {
+const NavItems = ({closeSidebar} : MobileProps) => {
 
     const user = {
         name: "Admin User",
@@ -25,7 +25,7 @@ const NavItems = () => {
                 {sidebarItems.map(({id, icon, label, href}) => (
                     <NavLink to={href} key={id}>
                         {({isActive} : {isActive : boolean}) => (
-                            <div className={cn("group nav-item hover:bg-blue-600 flex items-center gap-4 px-4 py-3 rounded-md cursor-pointer", 
+                            <div onClick={() => closeSidebar} className={cn("group nav-item hover:bg-blue-600 flex items-center gap-4 px-4 py-3 rounded-md cursor-pointer", 
                             isActive && "bg-blue-600 dark:bg-blue-800"
                             )}>
 

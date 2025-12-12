@@ -4,11 +4,6 @@ import menu from "public/assets/icons/menu.svg"
 import { useState } from "react";
 import NavItems from "./NavItems";
 
-export interface MobileProps {
-    closeSidebar?: () => void
-}
-
-
 const MobileSidebar = () => {
     const [isOpen, setIsOpen] = useState(false);
     
