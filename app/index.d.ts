@@ -14,4 +14,12 @@ declare interface StatsCardProps {
     previousPeriod: number;
 }
 
-declare interface TripsCardProps {}
+declare interface TripsCardProps {
+    id: string;
+    name: string;
+    imageUrls: string;
+    location: string;
+    tags: string[];
+    travelStyle: string;
+    price: string;
+}
