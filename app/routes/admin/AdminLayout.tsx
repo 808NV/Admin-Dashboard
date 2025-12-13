@@ -10,7 +10,7 @@ const AdminLayout = () => {
           <NavItems />
         </aside>
 
-        <aside className="children w-full h-full bg-light-200 pt-12 lg:pt-10 bg-gray-5">
+        <aside className="children w-full h-full bg-light-200 pt-12 lg:pt-10 bg-gray-100">
           <Outlet />
         </aside>
     </div>

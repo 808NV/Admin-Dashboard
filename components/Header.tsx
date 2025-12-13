@@ -3,8 +3,8 @@ import { useLocation } from "react-router"
 const Header = ({title, description} : HeaderProps ) => {
   const location = useLocation();
   return (
-    <header className="header">
-      <article>
+    <header className="header flex flex-col gap-5 md:flex-row justify-between w-full">
+      <article className="flex flex-col gap-3.5 w-full">
         <h1 className={cn("text-dark-100", 
           location.pathname === "/" ? "text-2xl md:text-4xl font-bold" : "text-xl md:text-2xl font-semibold" )}>
             {title}
