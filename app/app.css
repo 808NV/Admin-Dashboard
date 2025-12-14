@@ -13,3 +13,7 @@ body {
     color-scheme: dark;
   }
 }
+
+.auth {
+  background-image: url("/public/assets/images/auth-img.webp");
+}
